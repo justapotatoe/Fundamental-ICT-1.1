@@ -20,12 +20,12 @@ else:
 
 IF temperature => 10 THEN
   IF current_day == weekday THEN
-    IF time >  5:59 AND time < 8:31 THEN
+    IF time =>  6:00 AND time =< 8:30 THEN
       SET temperature TO 20
-    ELIF time > 17:29 and time < 22:01 THEN
+    ELIF time => 17:30 and time =< 22:00 THEN
       SET temperature TO 20
   ELSE
-    IF time > 7:59 AND time < 23:01 THEN
+    IF time => 8:00 AND time =< 23:00 THEN
       SET temperature TO 22
 ELSE
     SET boiler TO on
